@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    
+    <!-- font awesome cdn link  -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+     <!-- custom css file link  -->
+      <link rel="stylesheet" href="css/style.css">
+
+    <style>
+       
+        *
+        {
+            font-family:'poppins', sana-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+.Contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url(./image/5.jpg); 
+	background-size: cover;
+}
+
+.Contact .content{
+	max-width: 800px;
+	text-align: center;
+}
+
+.Contact .content h1{
+	font-size: 4.5rem;
+	font-weight: 500;
+	color: #fff;
+}
+
+.Contact .content p{
+	font-weight: 700;
+	color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #1ee2e9;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #16cae2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.footer .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap:2rem;
+}
+
+.footer .box-container .box h3{
+	font-size: 2.5rem;
+	color:var(--black);
+	padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+	display: block;
+	font-size: 1.5rem;
+	color:var(--light-color);
+	padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+	padding-right: .5rem;
+	color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+	padding-right:2rem;
+}
+
+.footer .credit{
+	padding: 1rem;
+	padding-top: 2rem;
+	margin-top: 2rem;
+	text-align: center;
+	font-size: 2rem;
+	color:var(--light-color);
+	border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+	color:var(--green);
+}
+
+
+@media (max-width: 991px) {
+    .Contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    
+
+  <!-- contact section starts -->
+
+ <section class="Contact" id="Contact">
+ 	<div class="content"> 
+ 		<h1>Contact Us</h1>
+ 		<p>Lorem ipsum dolor sit amet, contectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ 	</div>
+ 	<div class="container">
+ 		<div class="contactInfo">
+ 			<div class="box">
+ 				<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+ 				<div class="text">
+ 					<h3>Address</h3>
+ 					<p>4671 Sugar Camp Road,<br>Owatonna,Minnesota,<br>55060</p>
+ 					
+ 				</div>
+ 				
+ 			</div>
+
+ 			<div class="box">
+ 				<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+ 				<div class="text">
+ 					<h3>Phone</h3>
+ 					<p>507-475-6089</p>
+ 					
+ 				</div>
+ 				
+ 			</div>
+
+ 			<div class="box">
+ 				<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+ 				<div class="text">
+ 					<h3>Email</h3>
+ 					<p>medicazone@gmail.com</p>
+ 					
+ 				</div>
+ 				
+ 			</div>
+ 			
+ 		</div>
+
+ 		<div class="contactForm">
+ 			<form>
+ 				<h2>Send Message</h2>
+ 				<div class="inputBox">
+ 					<input type="text" name="" required="required">
+ 					<span>Full Name</span>	
+ 				</div>
+
+ 				<div class="inputBox">
+ 					<input type="text" name="" required="required">
+ 					<span>Email</span>	
+ 				</div>
+
+ 				<div class="inputBox">
+ 					<textarea required=
+ 					"required"></textarea>
+ 					<span>Type your Message...</span>
+ 				</div>
+
+ 				<div class="inputBox">
+ 					<input type="submit" name="" value="Send">	
+ 				</div>
+ 			</form>
+ 			
+ 		</div>
+ 		
+ 	</div>
+ 	
+ </section>
+ <!-- contact section ends -->
+
+
+ 
+ <!-- footer section starts -->
+
+ <section class="footer">
+
+    <div class="footer">
+        <div class="box-container">
+
+            <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i>home</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>service</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>about</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>doctors</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>hospital list</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>apponment</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>concate</a>
+            </div>
+
+            <div class="box">
+            <h3>services</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i>dental care</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>message therapy</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>diagnosis</a>
+            <a href="#"> <i class="fas fa-chevron-right"></i>ambulance service</a>
+            
+            </div>
+
+            <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="#"> <i class="fas fa-phone"></i>+111-222-3333</a>
+            <a href="#"> <i class="fas fa-envelope"></i>sanjin@gmail.com</a>
+            <a href="#"> <i class="fas fa-envelope"></i>busra@gmail.com</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>bangladesh, dhaka - 1208</a>
+            
+            </div>
+
+            <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook"></i>facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"> <i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i>pinterest</a>
+            
+            </div>
+        
+    </div>
+
+    <div class="credit"> created by <span>mr. Web Designer | All Right Reserved</div>
+    
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>
